@@ -13,7 +13,7 @@ use MartenaSoft\Seo\Repository\SeoRepository;
  *     fields={"name"}
  * )
  */
-class Seo
+class Seo implements SeoInterface
 {
 
     /**
