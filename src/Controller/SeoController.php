@@ -2,13 +2,19 @@
 
 namespace MartenaSoft\Seo\Controller;
 
+use MartenaSoft\Seo\Entity\Seo;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 
 class SeoController extends AbstractController
 {
-    public function index(): Response
+    public function tags(?Seo $seo): Response
     {
-        return $this->render('@MartenaSoftSeo/seo/index.html.twig');
+        if (empty($seo)) {
+            $seo = new Seo();
+        }
+        return $this->render('@MartenaSoftSeo/tags/tags.html.twig', [
+            'entity' => $seo
+        ]);
     }
 }

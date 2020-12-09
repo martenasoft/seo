@@ -1,2 +1,2 @@
 seo:
-  resource: '@MartenaSoftSeoBundle/Resources/config/routes/seo.yaml'
+  resource: '@MartenaSoftSeoBundle/Resources/config/routes/admin.yaml'

@@ -1,3 +1,0 @@
-index:
-  path: /main
-  controller: 'MartenaSoft\Seo\Controller\SeoController::index'
